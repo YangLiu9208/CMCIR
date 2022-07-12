@@ -1,2 +1,13 @@
 # VLCIR
 Visual-Linguistic Causality-aware Question Reasoning with Spatial-Temporal Urban Data
+Preprint 2022
+
+<a href="https://orcid.org/0000-0002-9423-9252" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">orcid.org/0000-0002-9423-9252</a>
+
+Homepage: [https://yangliu9208.github.io/home/](https://yangliu9208.github.io/home/)
+
+## Abstract
+Existing visual-linguistic question reasoning methods tend to capture the spurious correlations from both visual and linguistic modalities, and fail to discover the true casual mechanism that facilitates reasoning truthfully based on the dominant visual evidence and the correct question intention. Additionally, the existing methods usually focus on movie, TV-show or synthetic videos, and ignore the challenging urban scene that requires a strong cognitive capability of causal inference and event understanding to jointly model spatial-temporal, linguistic and causal relations. In this work, we focus on visual-linguistic question reasoning with large-scale urban spatial-temporal data from a new perspective, i.e., causal relational reasoning, by introducing causal intervention methods to mitigate the spurious correlations and discover the true causal structures for both visual and linguistic modalities. Specifically, we propose a novel urban video question reasoning framework named Visual-Linguistic Causal RelatIonal Reasoning (VLCIR), which consists of two essential components named causality-aware visual-linguistic reasoning module and spatial-temporal transformer, to achieve robust casuality-aware visual-linguistic question reasoning. To uncover the causal structures for visual and linguistic modalities, we propose a novel Causality-aware Visual-Linguistic Reasoning (CVLR) module, which leverages both front-door and back-door causal interventions to disentangle the visual and linguistic spurious biases. To discover the fine-grained interactions among linguistic semantics, spatial and temporal representations, we build a novel Spatial-Temporal Transformer (STT) that builds the visual and linguistic semantics interactions from multi-modal co-occurrence between the linguistic and the visual content. Extensive experiments on large-scale urban dataset SUTD-TrafficQA and three benchmark datasets TGIF-QA, MSVD-QA, and MSRVTT-QA demonstrate the effectiveness of our VLCIR for discovering visual-linguistic causal structures and achieving reliable spatial-temporal visual-linguistic question reasoning.
+
+## Codes
+Codes will be released soon!
