@@ -15,10 +15,10 @@ Existing visual question answering methods tend to capture the spurious correlat
 Figure 1: Framework of our proposed CMCIR.        
 
 ### Requirements
--python3.7
--numpy
--pytorch
--[pytorch-geometric](https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html)    
+- python3.7
+- numpy
+- pytorch
+- [pytorch-geometric](https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html)    
 
 ### Datasets
 We conducted our experiment on large-scale event-level urban dataset [SUTD-TrafficQA](https://sutdcv.github.io/SUTD-TrafficQA/#/) and three benchmark real-world datasets [TGIF-QA](https://github.com/YunseokJANG/tgif-qa), [MSVD-QA](https://github.com/xudejing/video-question-answering) and [MSRVTT-QA](https://github.com/xudejing/video-question-answering). The preprocessing steps are the same as the offcial ones. Please find more details from these datasets.        
