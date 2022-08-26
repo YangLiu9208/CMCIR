@@ -81,9 +81,8 @@ python 1_preprocess_features_motion_train.py --model Swin --question_type none
 or
 
 python 1_preprocess_features_motion_train.py --model resnext101 --question_type none
-
-3. K-means Clustering      
-
+```
+3. K-means Clustering    
 ```
 python k_means.py
 ```
@@ -242,8 +241,8 @@ python 1_preprocess_features_motion_msvd_train.py --model resnext101 --question_
 
 python 1_preprocess_features_motion_msrvtt_train.py --model resnext101 --question_type none
 
-3. K-means Clustering      
-
+```
+3. K-means Clustering   
 ```
 python k_means.py
 ```
