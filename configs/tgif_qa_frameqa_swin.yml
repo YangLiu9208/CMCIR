@@ -1,0 +1,34 @@
+gpu_id: 0
+multi_gpus: True
+num_workers: 4
+seed: 666
+exp_name: 'expTGIF-QAFrameQA-Swinv2'
+
+train:
+  lr: 0.0001
+  batch_size: 32
+  restore: False
+  max_epochs: 50
+  word_dim: 300
+  motion_dim: 1024 #1024
+  appearance_dim: 1536 #1536
+  module_dim: 512
+  glove: True
+
+
+val:
+  flag: True
+
+test:
+  test_num: 0
+  write_preds: False
+
+dataset:
+  name: 'tgif-qa'
+  question_type: 'frameqa'
+  data_dir: 'data/tgif-qa/frameqa'
+  save_dir: 'results/'
+  appearance_feat: '{}_{}_appearance_feat.h5'
+  motion_feat: '{}_{}_motion_feat.h5'
+  appearance_dict: '{}_appearance_feat_dict_train_512.h5'
+  motion_dict: '{}_motion_feat_dict_train_512.h5'

@@ -1,0 +1,38 @@
+gpu_id: 0
+multi_gpus: True
+num_workers: 4
+seed: 666
+exp_name: 'expSUTD-QA_Resnet_learned3v2'
+
+train:
+  lr: 0.0002
+  batch_size: 64
+  restore: False
+  max_epochs: 100
+  word_dim: 300
+  motion_dim: 2048 #1024
+  appearance_dim: 2048 #1536
+  module_dim: 512
+  glove: True
+
+
+val:
+  flag: True
+
+test:
+  test_num: 0
+  write_preds: True
+
+dataset:
+  name: 'sutd-qa'
+  question_type: 'none'
+  data_dir: 'data/sutd-qa'
+  save_dir: 'results/'
+  appearance_feat: '{}_appearance_feat_ResNet.h5'
+  motion_feat: '{}_motion_feat_ResNetxt.h5'
+  appearance_dict: '{}_appearance_feat_ResNet_dict_512.h5'
+  motion_dict: '{}_motion_feat_ResNetxt_dict_512.h5'
+  # appearance_feat: '{}_appearance_feat_resnet_all_16.h5'
+  # motion_feat: '{}_motion_feat_resnext101_all_16.h5'
+  # appearance_dict: '{}_appearance_resnet16_feat_dict_512.h5'
+  # motion_dict: '{}_motion_resnext16_feat_dict_512.h5'
