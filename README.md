@@ -30,7 +30,7 @@ Code will be released when it is fully prepared, please stay focusing on!
 3. Install dependencies.
 
 ## Experiments with SUTD-TrafficQA     
-### Preprocess linguistic features  
+### Preprocess Linguistic Features  
 1. Download [glove pretrained 300d word vectors](http://nlp.stanford.edu/data/glove.840B.300d.zip) to `data/glove/` and process it into a pickle file.
 
 2. Preprocess train/val/test questions:
@@ -39,7 +39,7 @@ python 1_preprocess_questions_oie.py --mode train
     
 python 1_preprocess_questions_oie.py --mode test
 ```    
-### Preprocess visual features    
+### Preprocess Visual Features    
 1. To extract appearance feature with Swin or Resnet101 model:  
 
 ```
@@ -95,14 +95,14 @@ python train_SUTD.py
 
 ## Experiments with TGIF-QA    
 Depending on the task to chose question_type out of 4 options: action, transition, count, frameqa.
-### Preprocess linguistic features  
+### Preprocess Linguistic Features  
 1. Preprocess train/val/test questions:
 ```
 python 1_preprocess_questions_oie_tgif.py --mode train --question_type {question_type}
     
 python 1_preprocess_questions_oie_tgif.py --mode test  --question_type {question_type}
 ```    
-### Preprocess visual features    
+### Preprocess Visual Features    
 1. To extract appearance feature with Swin or Resnet101 model:  
 
 ```
