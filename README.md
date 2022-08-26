@@ -29,9 +29,13 @@ We conducted our experiment on large-scale event-level urban dataset [SUTD-Traff
 3. Install dependencies.
 
 ## Experiments with SUTD-TrafficQA     
+We refer to [SUTD-TrafficQA Official Codes](https://github.com/SUTDCV/SUTD-TrafficQA) for preprocessing.      
 ### Preprocess Linguistic Features  
-1. Download [glove pretrained 300d word vectors](http://nlp.stanford.edu/data/glove.840B.300d.zip) to `data/glove/` and process it into a pickle file.
+1. Download [glove pretrained 300d word vectors](http://nlp.stanford.edu/data/glove.840B.300d.zip) to `/data/glove/` and process it into a pickle file.
+```
+python txt2pickle.py
 
+```
 2. Preprocess train/val/test questions:
 ```
 python 1_preprocess_questions_oie.py --mode train
