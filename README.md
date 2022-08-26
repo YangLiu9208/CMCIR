@@ -54,17 +54,206 @@ python 1_preprocess_features_appearance.py --model resnet101 --question_type non
 2. To extract motion feature with Swin or ResnetXt101 model:
 
 ```
+python 1_preprocess_features_motion.py --model Swin --question_type none
+
+or
+
+python 1_preprocess_features_motion.py --model resnext101 --question_type none
+
+```
+### Visual K-means Clustering
+1. To extract training appearance feature with Swin or Resnet101 model:  
+
+```
+python 1_preprocess_features_appearance_train.py --model Swin --question_type none
+
+ or
+ 
+python 1_preprocess_features_appearance_train.py --model resnet101 --question_type none
+
+```
+
+2. To extract training motion feature with Swin or ResnetXt101 model:
+
+```
 python 1_preprocess_features_motion_train.py --model Swin --question_type none
 
 or
 
 python 1_preprocess_features_motion_train.py --model resnext101 --question_type none
 
+3. K-means Clustering      
+
 ```
+python k_means.py
+```
+Edit absolute paths upon where you locate your data.    
 
 ### Training and Testing
 ```
 python train_SUTD.py
+```
+
+## Experiments with TGIF-QA    
+Depending on the task to chose question_type out of 4 options: action, transition, count, frameqa.
+### Preprocess linguistic features  
+1. Preprocess train/val/test questions:
+```
+python 1_preprocess_questions_oie_tgif.py --mode train --question_type {question_type}
+    
+python 1_preprocess_questions_oie_tgif.py --mode test  --question_type {question_type}
+```    
+### Preprocess visual features    
+1. To extract appearance feature with Swin or Resnet101 model:  
+
+```
+python 1_preprocess_features_appearance_tgif_total.py --model Swin --question_type {question_type}
+
+ or
+ 
+python 1_preprocess_features_appearance_tgif_total.py --model resnet101 --question_type {question_type}
+
+```
+
+2. To extract motion feature with Swin or ResnetXt101 model:
+
+```
+python 1_preprocess_features_motion_tgif_total.py --model Swin --question_type {question_type}
+
+or
+
+python 1_preprocess_features_motion_tgif_total.py --model resnext101 --question_type {question_type}
+
+```
+### Visual K-means Clustering
+1. To extract training appearance feature with Swin or Resnet101 model:  
+
+```
+python 1_preprocess_features_appearance_tgif.py --model Swin --question_type {question_type}
+
+ or
+ 
+python 1_preprocess_features_appearance_tgif.py --model resnet101 --question_type {question_type}
+
+```
+
+2. To extract training motion feature with Swin or ResnetXt101 model:
+
+```
+python 1_preprocess_features_motion_tgif.py --model Swin --question_type {question_type}
+
+or
+
+python 1_preprocess_features_motion_tgif.py --model resnext101 --question_type {question_type}
+
+```
+
+3. K-means Clustering      
+
+```
+python k_means.py
+```
+
+Edit absolute paths upon where you locate your data.    
+
+### Training and Testing
+```
+python train_TGIF_Action.py
+
+python train_TGIF_Transition.py
+
+python train_TGIF_Count.py
+
+python train_TGIF_FrameQA.py
+```
+
+## Experiments with MSVD-QA/MSRVTT-QA
+### Preprocess linguistic features  
+1. Preprocess train/val/test questions:
+```
+python 1_preprocess_questions_oie_msvd.py --mode train
+    
+python 1_preprocess_questions_oie_msvd.py --mode test
+```    
+or    
+
+```
+python 1_preprocess_questions_oie_msrvtt.py --mode train
+    
+python 1_preprocess_questions_oie_msrvtt.py --mode test
+```  
+
+### Preprocess visual features    
+1. To extract appearance feature with Swin or Resnet101 model:  
+
+```
+python 1_preprocess_features_appearance_msvd.py --model Swin --question_type none
+
+python 1_preprocess_features_appearance_msrvtt.py --model Swin --question_type none
+
+ or
+ 
+python 1_preprocess_features_appearance_msvd.py --model resnet101 --question_type none
+
+python 1_preprocess_features_appearance_msrvtt.py --model resnet101 --question_type none
+
+```
+
+2. To extract motion feature with Swin or ResnetXt101 model:
+
+```
+python 1_preprocess_features_motion_msvd.py --model Swin --question_type none
+
+python 1_preprocess_features_motion_msrvtt.py --model Swin --question_type none
+
+or
+
+python 1_preprocess_features_motion_msvd.py --model resnext101 --question_type none
+
+python 1_preprocess_features_motion_msrvtt.py --model resnext101 --question_type none
+
+```
+### Visual K-means Clustering
+1. To extract training appearance feature with Swin or Resnet101 model:  
+
+```
+python 1_preprocess_features_appearance_msvd_train.py --model Swin --question_type none
+
+python 1_preprocess_features_appearance_msrvtt_train.py --model Swin --question_type none
+
+ or
+ 
+python 1_preprocess_features_appearance_msvd_train.py --model resnet101 --question_type none
+
+python 1_preprocess_features_appearance_msrvtt_train.py --model resnet101 --question_type none
+
+```
+
+2. To extract training motion feature with Swin or ResnetXt101 model:
+
+```
+python 1_preprocess_features_motion_msvd_train.py --model Swin --question_type none
+
+python 1_preprocess_features_motion_msrvtt_train.py --model Swin --question_type none
+
+or
+
+python 1_preprocess_features_motion_msvd_train.py --model resnext101 --question_type none
+
+python 1_preprocess_features_motion_msrvtt_train.py --model resnext101 --question_type none
+
+3. K-means Clustering      
+
+```
+python k_means.py
+```
+Edit absolute paths upon where you locate your data.    
+
+### Training and Testing
+```
+python train_MSVD.py
+
+python train_MSRVTT.py
 ```
 
 ### Citation
