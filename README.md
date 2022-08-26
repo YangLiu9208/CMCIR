@@ -23,8 +23,39 @@ Figure 1: Framework of our proposed CMCIR.
 ### Datasets
 We conducted our experiment on large-scale event-level urban dataset [SUTD-TrafficQA](https://sutdcv.github.io/SUTD-TrafficQA/#/) and three benchmark real-world datasets [TGIF-QA](https://github.com/YunseokJANG/tgif-qa), [MSVD-QA](https://github.com/xudejing/video-question-answering) and [MSRVTT-QA](https://github.com/xudejing/video-question-answering). The preprocessing steps are the same as the official ones. Please find more details from these datasets.        
 
-### Codes
-Code will be released when it is fully prepared, please stay focusing on!     
+### Setups
+Code will be released when it is fully prepared, please stay focusing on!   
+1. Dowanload [SUTD-TrafficQA](https://sutdcv.github.io/SUTD-TrafficQA/#/), [TGIF-QA](https://github.com/YunseokJANG/tgif-qa), [MSVD-QA](https://github.com/xudejing/video-question-answering) and [MSRVTT-QA](https://github.com/xudejing/video-question-answering) datasets.    
+2. Edit absolute paths in preprocess/preprocess_features.py and preprocess/preprocess_questions.py upon where you locate your data.
+3. Install dependencies.
+
+### Experiments with SUTD-TrafficQA     
+#### Preprocess linguistic features  
+1. Download [glove pretrained 300d word vectors](http://nlp.stanford.edu/data/glove.840B.300d.zip) to `data/glove/` and process it into a pickle file.
+
+2. Preprocess train/val/test questions:
+```
+python 1_preprocess_questions_oie.py --mode train
+    
+python 1_preprocess_questions_oie.py --mode test
+```    
+#### Preprocess visual features    
+1. To extract appearance feature with Swin model:  
+
+```
+python 1_preprocess_features_appearance.py --model Swin --question_type none
+```
+
+2. To extract motion feature with Swin model:
+
+```
+python 1_preprocess_features_motion_train.py --model Swin --question_type none
+```
+
+#### Training and Testing
+```
+python train_SUTD.py
+```
 
 ### Citation
 If you use this code for your research, please cite our paper.      
