@@ -29,8 +29,8 @@ Code will be released when it is fully prepared, please stay focusing on!
 2. Edit absolute paths in preprocess/preprocess_features.py and preprocess/preprocess_questions.py upon where you locate your data.
 3. Install dependencies.
 
-### Experiments with SUTD-TrafficQA     
-#### Preprocess linguistic features  
+## Experiments with SUTD-TrafficQA     
+### Preprocess linguistic features  
 1. Download [glove pretrained 300d word vectors](http://nlp.stanford.edu/data/glove.840B.300d.zip) to `data/glove/` and process it into a pickle file.
 
 2. Preprocess train/val/test questions:
@@ -39,20 +39,30 @@ python 1_preprocess_questions_oie.py --mode train
     
 python 1_preprocess_questions_oie.py --mode test
 ```    
-#### Preprocess visual features    
-1. To extract appearance feature with Swin model:  
+### Preprocess visual features    
+1. To extract appearance feature with Swin or Resnet101 model:  
 
 ```
 python 1_preprocess_features_appearance.py --model Swin --question_type none
+
+ or
+ 
+python 1_preprocess_features_appearance.py --model resnet101 --question_type none
+
 ```
 
-2. To extract motion feature with Swin model:
+2. To extract motion feature with Swin or ResnetXt101 model:
 
 ```
 python 1_preprocess_features_motion_train.py --model Swin --question_type none
+
+or
+
+python 1_preprocess_features_motion_train.py --model resnext101 --question_type none
+
 ```
 
-#### Training and Testing
+### Training and Testing
 ```
 python train_SUTD.py
 ```
