@@ -53,7 +53,7 @@ python 1_preprocess_features_appearance.py --model resnet101 --question_type non
 
 2. To extract motion feature with Swin or ResnetXt101 model:
 
- Download Swin3D [pretrained model](https://github.com/microsoft/Swin-Transformer)(swin_base_patch244_window877_kinetics600_22k.pth) and place it to `configs/`.
+ Download Swin3D [pretrained model](https://github.com/microsoft/Swin-Transformer) (swin_base_patch244_window877_kinetics600_22k.pth) and place it to `configs/`.
  
  Download ResNeXt-101 [pretrained model](https://drive.google.com/drive/folders/1zvl89AgFAApbH0At-gMuZSeQB_LpNP-M) (resnext-101-kinetics.pth) and place it to `data/preprocess/pretrained/`.
 ```
