@@ -40,7 +40,7 @@ if __name__ == '__main__':
         # check if data folder exists
         if not os.path.exists('data/{}'.format(args.dataset)):
             os.makedirs('data/{}'.format(args.dataset))
-        sutd_qa.process_questions_oie_bert(args)
+        sutd_qa.process_questions_oie_keybert_bert2(args)
     elif args.dataset == 'tgif-qa':
         args.annotation_file = 'datasets/tgif-qa/csv/{}_{}_question.csv'
         args.output_pt = 'data/tgif-qa/{}/tgif-qa_{}_{}_questions.pt'
