@@ -14,7 +14,7 @@ Figure 1: Framework of our proposed CMCIR.
 ### Experimental Results
 ![Image](SUTD.png)
 Figure 2: Results on SUTD-TrafficQA dataset.  
-![Image](TGIF.png0)
+![Image](TGIF.png)
 Figure 3: Results on TGIF-QA dataset.  
 ![Image](MSVD.png)
 Figure 4: Results on MSVD-QA dataset.  
