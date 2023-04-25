@@ -12,13 +12,13 @@ Existing visual question answering methods often suffer from cross-modal spuriou
 Figure 1: Framework of our proposed CMCIR.        
 
 ### Experimental Results
-![Image](SUTD.png =100x100)
+![Image](SUTD.png){:height="100" width="100"}
 Figure 2: Results on SUTD-TrafficQA dataset.  
-![Image](TGIF.png =100x100)       
+![Image](TGIF.png0){:height="100" width="100"}       
 Figure 3: Results on TGIF-QA dataset.  
-![Image](MSVD.png =100x100)
+![Image](MSVD.png){:height="100" width="100"}
 Figure 4: Results on MSVD-QA dataset.  
-![Image](MSRVTT.png =100x100)
+![Image](MSRVTT.png){:height="100" width="100"}
 Figure 5: Results on MSRVTT-QA dataset.  
 
 ### Requirements
