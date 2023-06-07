@@ -8,17 +8,17 @@ For more details, please refer to our paper [Cross-Modal Causal Relational Reaso
 Existing visual question answering methods often suffer from cross-modal spurious correlations and oversimplified event-level reasoning processes that fail to capture event temporality, causality, and dynamics spanning over the video. In this work, to address the task of event-level visual question answering, we propose a framework for cross-modal causal relational reasoning. In particular, a set of causal intervention operations is introduced to discover the underlying causal structures across visual and linguistic modalities. Our framework, named Cross-Modal Causal RelatIonal Reasoning (CMCIR), involves three modules: i) Causality-aware Visual-Linguistic Reasoning (CVLR) module for collaboratively disentangling the visual and linguistic spurious correlations via front-door and back-door causal interventions; ii) Spatial-Temporal Transformer (STT) module for capturing the fine-grained interactions between visual and linguistic semantics; iii) Visual-Linguistic Feature Fusion (VLFF) module for learning the global semantic-aware visual-linguistic representations adaptively. Extensive experiments on four event-level datasets demonstrate the superiority of our CMCIR in discovering visual-linguistic causal structures and achieving robust event-level visual question answering. 
 
 ### Model
-![Image](Fig1.png)        
+![Image](Images/CMCIR.gif)        
 Figure 1: Framework of our proposed CMCIR.        
 
 ### Experimental Results
-![Image](SUTD.png)
+![Image](Images/SUTD.png)
 Figure 2: Results on SUTD-TrafficQA dataset.  
-![Image](TGIF.png)
+![Image](Images/TGIF.png)
 Figure 3: Results on TGIF-QA dataset.  
-![Image](MSVD.png)
+![Image](Images/MSVD.png)
 Figure 4: Results on MSVD-QA dataset.  
-![Image](MSRVTT.png)
+![Image](Images/MSRVTT.png)
 Figure 5: Results on MSRVTT-QA dataset.  
 
 ### Requirements
